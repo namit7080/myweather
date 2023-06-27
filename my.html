@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- Adding Css -->
+    <link rel="stylesheet" href="my.css" />
+  </head>
+  <body>
+    <section class="form-container">
+      <form class="form">
+        <h2 class="color">Weather App</h2>
+
+        <!-- Only City name is required for API but you can add multiple -->
+        <input
+          type="text"
+          id="city"
+          class="username-bar"
+          required
+          placeholder="Enter Your City Name"
+        />
+
+        <!-- Button -->
+        <input
+          type="button"
+          id="submit"
+          onclick="handleinput()"
+          value="Submit"
+          class="submit-btn"
+        />
+      </form>
+
+      <!-- All information -->
+      <div class="sidebar">
+        <h1 id="datahead">Waiting For Data</h1>
+        <h3>Country: <span id="country">Nil</span></h3>
+        <h3>Wind Speed: <span id="wind">Nil</span></h3>
+        <h3>Temperature: <span id="temp">Nil</span></h3>
+        <h3>Time: <span id="time">Nil</span></h3>
+      </div>
+    </section>
+
+    <!-- Adding Js for Functionality -->
+    <script src="my.js"></script>
+  </body>
+</html>
